@@ -96,7 +96,7 @@ st.markdown(f'''\n
     </h1>
     <p class="sub-title">
         Exploración de datos y visualización de salarios en la industria tecnológica a partir de un conjunto de datos global.
-    </>p
+    </p>
 ''', unsafe_allow_html=True)
     
 # kpis Principales
@@ -110,4 +110,8 @@ with col1:
 with col2:
     median_salary = df['salary_in_usd'].median()
     st.metric(label='Salario Mediano (USD)', value=f'${median_salary:,.2f}')
+
+with col3:
+    total_records = len(df)
+    st.metric(label='Total de Registros', value=total_records)
     
