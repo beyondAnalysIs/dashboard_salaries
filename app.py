@@ -217,7 +217,7 @@ with col_graf_2:
         st.plotly_chart(fig, use_container_width=True)
         st.markdown('</div></div>', unsafe_allow_html=True)
 
-    # GRÁFICO DE COMPARACIÓN GEOGRÁFICA (AÑADIDO)
+    # GRÁFICO DE COMPARACIÓN GEOGRÁFICA
     with st.container():
         st.markdown('<div class="card-wrapper"><div class="chart-container">', unsafe_allow_html=True)
         st.markdown('<h3 class="chart-container">Comparación Geográfica de Salarios</h3>', unsafe_allow_html=True)
@@ -227,7 +227,7 @@ with col_graf_2:
         st.plotly_chart(fig, use_container_width=True)
         st.markdown('</div></div>', unsafe_allow_html=True)
 
-# GRÁFICO DE IMPACTO DEL TRABAJO REMOTO (AÑADIDO)
+# GRÁFICO DE IMPACTO DEL TRABAJO REMOTO
 with st.container():
     st.markdown('<div class="card-wrapper"><div class="chart-container">', unsafe_allow_html=True)
     st.markdown('<h3 class="chart-container">Impacto del Trabajo Remoto en los Salarios</h3>', unsafe_allow_html=True)
