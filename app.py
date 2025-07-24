@@ -102,7 +102,7 @@ st.markdown("""
 # --- SIDEBAR DE FILTROS ---
 with st.sidebar:
     st.header('🔍 Filtros')
-    exp_options = ['Todos'] + sorted(df['exp_level_name'].unique().tolist())
+    exp_options = ['Todos'] + sorted(df['exp_level_name'].unique().tolis0t())
     selected_exp = st.selectbox('Nivel de experiencia', exp_options)
 
     emp_options = ['Todos'] + sorted(df['employment_type'].unique().tolist())
@@ -117,7 +117,9 @@ with st.sidebar:
     min_salary, max_salary = int(df['salary_in_usd'].min()), int(df['salary_in_usd'].max())
     salary_range = st.slider(
         'Rango salarial (USD)',
-        min_value=min_salary, max_value=max_salary, value=(min_salary, max_salary)
+        min_value=min_salary, 
+        max_value=max_salary, 
+        value=(min_salary, max_salary)
     )
 
     # Aplicar filtros
